@@ -1,1 +1,49 @@
 /*  your css code here. If applicable */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #6e072d;
+    color: white;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 18px 27px; /* Vertical padding = font size (18px), Horizontal padding = font size * 1.5 (27px) */
+    font-size: 18px;
+    font-weight: bold;
+    border-right: 2px solid white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.navbar ul li:hover {
+    background-color: #b90e4d;
+}
+
+.nav-left li.no-border-right {
+    border-right: none;
+}
+
+.nav-right li.no-border-left {
+    border-left: 2px solid white;
+    border-right: none;
+}
